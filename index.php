@@ -24,7 +24,7 @@
 		<?php
 
 $dir = getcwd() . "/photos";
-$files1 = glob($dir . "/PB*.jpg");
+$files1 = array_reverse(glob($dir . "/PB*.jpg"));
 
 
 foreach($files1 as $phpfile)
